@@ -1,0 +1,292 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<!-- banner -->
+<header xmlns="http://www.w3.org/1999/html">
+    <div class="header-content">
+    <h2>Explore The Farming</h2>
+    <div class="line"></div>
+    <h1>Explore the World of Farming</h1>
+    <a href="{{ url_for('about_us') }}" class="ctn">Learn More</a>
+    </div>
+    </header>
+<!--<section class="banner_w3lspvt" id="home">-->
+<!--	<div class="csslider infinity" id="slider1">-->
+<!--	-->
+<!--				<div class="banner-top">-->
+<!--					<div class="overlay">-->
+<!--						<div class="container">-->
+<!--							<div class="w3layouts-banner-info text-center">-->
+<!--								<h3 class="text-wh">Harvestify</h3>-->
+<!--								<h4 class="text-wh mx-auto my-4"><b>Get informed decisions about your farming strategy.</b></h4>-->
+<!--								<br>-->
+<!--								<h4 class="text-wh mx-auto my-4"><strong> Here are some questions we'll answer</strong></h4>-->
+<!--								<p class="text-li mx-auto mt-2">-->
+<!--									1. What crop to plant here? <br>-->
+<!--									2. What fertilizer to use? <br>-->
+<!--									3. Which disease do your crop have?<br>-->
+<!--									4. How to cure the disease?</p>-->
+<!--							</div>-->
+<!--						</div>-->
+<!--					</div>-->
+<!--				</div>-->
+<!--	</div>-->
+<!--</section>-->
+<!-- //banner -->
+
+<!-------Events----->
+
+    <section class="events">
+        <div class="title">
+            <h1>Upcoming Programs</h1>
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="{{ url_for('static', filename='images/priscilla-du-preez-tGtWKDdicn4-unsplash.jpg') }}">
+                <h4>Everest Camp</h4>
+                <p> cnkdjnc cnkmalnl canlk nn n canslakcc nancaois nuoce niaanoc nninfcan hbkafkuji</p>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+            <div class="col">
+                <img src="{{ url_for('static', filename='images/scott-goodwill-CtRE4_4L7b8-unsplash.jpg') }}">
+                <h4>Halking Holidays</h4>
+                <p> cnkdjnc cnkmalnl canlk nnhbkafkuj cn canslakcc nancaois nuoce niaanoc nninfcan ccnono cnoikfhwow nonoaa i</p>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+        </div>
+<!--
+        <div class="row">
+            <div class="col">
+                <img src="./img/scott-goodwill-CtRE4_4L7b8-unsplash.jpg" alt="">
+                <h4>Halking Holidays</h4>
+                <p> cnkdjnc cnkmalnl canlk nnhbkafkuj cn canslakcc nancaois nuoce niaanoc nninfcan ccnono cnoikfhwow nonoaa i</p>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+        </div>
+-->
+    </section>
+
+<!--    About us-->
+
+    <section class="about">
+        <div class="content">
+            <img src="{{ url_for('static', filename='images/farmer_PNG63.png') }}">
+            <div class="text">
+                <h1>About Us</h1>
+                <h5>Developer and Designer</h5>
+                <p>nkjsncs mscs msso isiuibv cnscisn cunu jca cnini nc9c8wn wn9cn w9cw9cw9 nw9cnw9n9 neu jsn sinisno caocnncibsi o icnsincocn snssiuo oos nis nsi nsinsn aoc ccnnusi naoh ibishocijaoboh vbsooihsvsn</p>
+<!--                <button type="button_btn">Read More</button>-->
+                <button type="button_btn"><a href="{{ url_for('about_us') }}">Read More</a></button>
+            </div>
+        </div>
+    </section>
+
+<!--    Forth desig-->
+    <section class="our">
+        <div class="heading">
+            <h2><span>Our</span> Services</h2>
+        </div>
+        <div class="container-box">
+            <div class="box">
+                <div class="box-img">
+                    <img src="{{ url_for('static', filename='images/daniel-fazio-oK9EKfqv8HE-unsplash.jpg') }}">
+                </div>
+                <div class="box-content">
+                    <h3>Crop</h3>
+                    <p>nkjsncs mscs msso isiuibv cnscisn cunu jca cnini nc9c8wn wn9cn w9cw9cw9 nw9cnw9n9 neu jsn sinisno caocnncibsi o icnsincocn snssiuo oos nis nsi nsinsn aoc ccnnusi naoh</p>
+                    <a href="{{ url_for('crop_recommend') }}">Predict</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="{{ url_for('static', filename='images/severin-candrian-0xoF2R50GOA-unsplash.jpg') }}">
+                </div>
+                <div class="box-content">
+                    <h3>Fertilizer</h3>
+                    <p>nkjsncs mscs msso isiuibv cnscisn cunu jca cnini nc9c8wn wn9cn w9cw9cw9 nw9cnw9n9 neu jsn sinisno caocnncibsi o icnsincocn snssiuo oos nis nsi nsinsn aoc ccnnusi naoh</p>
+                    <a href="{{ url_for('fertilizer_recommendation') }}">Predict</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="{{ url_for('static', filename='images/potato-blight.jpg') }}">
+                </div>
+                <div class="box-content">
+                    <h3>Disease</h3>
+                    <p>nkjsncs mscs msso isiuibv cnscisn cunu jca cnini nc9c8wn wn9cn w9cw9cw9 nw9cnw9n9 neu jsn sinisno caocnncibsi o icnsincocn snssiuo oos nis nsi nsinsn aoc ccnnusi naoh</p>
+                    <a href="{{ url_for('disease_prediction') }}">Predict</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- core values -->
+<!--<section class="core-value py-5">-->
+<!--	<div class="container py-md-4">-->
+<!--		<h3 class="heading mb-sm-5 mb-4 text-center"> About Us</h3>-->
+<!--		<div class="row core-grids">-->
+<!--			<div class="col-lg-6 core-left">-->
+<!--				<img src="{{ url_for('static', filename='images/core.jpg') }}" class="img-fluid" alt="" />-->
+<!--			</div>-->
+<!--			<div class="col-lg-6 core-right">-->
+<!--				<h3 class="mt-4">Improving Agriculture, Improving Lives, Cultivating Crops To Make Farmers Increase-->
+<!--					Profit.</h3>-->
+<!--				<p class="mt-3">We use state-of-the-art machine learning and deep learning technologies to help you-->
+<!--					guide through-->
+<!--					the entire farming process. Make informed decisions to understand the demographics of your area,-->
+<!--					understand the-->
+<!--					factors that affect your crop and keep them healthy for a super awesome successful yield.</p>-->
+<!--			</div>-->
+<!--		</div>-->
+<!--	</div>-->
+<!--</section>-->
+<!-- //core values -->
+
+<!--Explore-->
+    <section class="explore">
+        <div class="explore-content">
+            <h1>Explore the World</h1>
+            <div class="line"></div>
+            <p>cnkdjnc cnkmalnl canlk nnhbkafkuj cn canslakcc nancaois nuoce niaanoc nninfcan ccnono cnoikfhwow nonoaa cnkdjnc cnkmalnl canlk nnhbkafkuj cn canslakcc nancaois nuoce n</p>
+            <a href="{{ url_for('about_us') }}" class="ctn">Learn More</a>
+        </div>
+    </section>
+
+<!-- Products & Services -->
+<!--<section class="blog py-5">-->
+<!--	<div class="container py-md-5">-->
+<!--		<h3 class="heading mb-sm-5 mb-4 text-center"> Our Services</h3>-->
+<!--		<div class="row blog-grids">-->
+<!--			<div class="col-lg-4 col-md-6 blog-left mb-lg-0 mb-sm-5 pb-lg-0 pb-5">-->
+<!--				<img src="{{ url_for('static', filename='images/s3.jpg') }}" class="img-fluid" alt="" />-->
+<!--				<a href="{{ url_for('crop_recommend') }}">-->
+<!--					<div class="blog-info">-->
+
+<!--						<h4>Crop</h4>-->
+
+<!--						<p class="mt-2"> Recommendation about the type of crops to be cultivated which is best suited-->
+<!--							for the respective conditions</p>-->
+<!--					</div>-->
+<!--				</a>-->
+<!--			</div>-->
+<!--			<div class="col-lg-4 col-md-6 blog-middle mb-lg-0 mb-sm-5 pb-lg-0 pb-md-5">-->
+<!--				<img src="{{ url_for('static', filename='images/s2.jpg') }}" class="img-fluid" alt="" />-->
+<!--				<a href="{{ url_for('fertilizer_recommendation') }}">-->
+<!--					<div class="blog-info">-->
+<!--						<h4>Fertilizer</h4>-->
+<!--						<p class="mt-2">Recommendation about the type of fertilizer best suited for the particular soil-->
+<!--							and the recommended crop</p>-->
+<!--					</div>-->
+<!--				</a>-->
+<!--			</div>-->
+<!--			<div class="col-lg-4 col-md-6 blog-right mt-lg-0 mt-5 pt-lg-0 pt-md-5">-->
+
+<!--				<img src="{{ url_for('static', filename='images/s4.jpg') }}" class="img-fluid" alt="">-->
+
+<!--				&lt;!&ndash; <img src="images/s4.jpg" class="img-fliud" alt="" /> &ndash;&gt;-->
+<!--				<a href="{{ url_for('disease_prediction') }}">-->
+<!--					<div class="blog-info">-->
+<!--						<h4>Crop Disease</h4>-->
+<!--						<p class="mt-2">Predicting the name and causes of crop disease and suggestions to cure it</p>-->
+<!--					</div>-->
+<!--				</a>-->
+<!--			</div>-->
+<!--		</div>-->
+<!--	</div>-->
+<!--</section>-->
+<!-- //Products & Services -->
+
+
+<!--    Another design of Our team -->
+
+    <section class="team">
+        <div class="content-box">
+            <div class="container">
+                <h1>Our <em>Team</em></h1>
+                <div class="row services">
+                <div class="col-md-3 text-center">
+                    <div class="icon">
+                        <img src="{{ url_for('static', filename='images/22654-6-man-thumb.png" class="profile-image') }}">
+                    </div>
+                    <h3>Web <span>Design</span></h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled i </p>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="icon">
+                        <img src="{{ url_for('static', filename='images/22654-6-man-thumb.png" class="profile-image') }}">
+                    </div>
+                    <h3>Web <span>Development</span></h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled i </p>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="icon">
+                        <img src="{{ url_for('static', filename='images/22654-6-man-thumb.png" class="profile-image') }}">
+                    </div>
+                    <h3>Web <span>Design</span></h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled i </p>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="icon">
+                        <img src="{{ url_for('static', filename='images/22654-6-man-thumb.png" class="profile-image') }}">
+                    </div>
+                    <h3>Web <span>Design</span></h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled i </p>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <section class="team">
+        <div class="content-box">
+            <div class="container">
+                <div class="row services">
+                <div class="col-md-3 text-center">
+                    <div class="icon">
+                        <img src="{{ url_for('static', filename='images/22654-6-man-thumb.png" class="profile-image') }}">
+                    </div>
+                    <h3>Web <span>Design</span></h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled i </p>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="icon">
+                        <img src="{{ url_for('static', filename='images/22654-6-man-thumb.png" class="profile-image') }}">
+                    </div>
+                    <h3>Web <span>Development</span></h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled i </p>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="icon">
+                        <img src="{{ url_for('static', filename='images/22654-6-man-thumb.png" class="profile-image') }}">
+                    </div>
+                    <h3>Web <span>Design</span></h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled i </p>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="icon">
+                        <img src="{{ url_for('static', filename='images/22654-6-man-thumb.png" class="profile-image') }}">
+                    </div>
+                    <h3>Web <span>Design</span></h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled i </p>
+                </div>
+                </div>
+            </div>
+        </div>
+		</section>
+
+<!-- Creating custom grid and hover effect
+<section>
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+    <div class="hovereffect">
+        <img class="img-responsive" src="images/s2.jpg" alt="">
+        <div class="overlay">
+           <h2>Hover effect 1</h2>
+           <a class="info" href="#">link here</a>
+        </div>
+    </div>
+</div> -->
+
+</html>
+
+{% endblock %}
