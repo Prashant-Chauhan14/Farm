@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 
 <head>
 	<title>{{ title }}</title>
@@ -118,10 +118,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
 		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
 		crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery-bez@1.0.11/src/jquery.bez.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
 		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
 		crossorigin="anonymous"></script>
-	</body>
+
 	<!-- css files -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
 		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -147,14 +150,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			background-color: rgba(30, 30, 30, 1);
 			margin-top: 0rem;
 			display: block;
-
 		}
 	</style>
-</head>
 
+</head>
 <body>
 
+
+
+
 	<!-- Navigation -->
+	<div class="backdrop">
+        <div class="backdrop2">
 	<nav class="navbar">
         <h1 class="logo"><a href="{{ url_for('home') }}">Rural Steer</a></h1>
         <ul class="nav-links">
@@ -166,6 +173,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         </ul>
         <img src="{{ url_for('static', filename='images/icons8-menu-50.png') }}" alt="" class="menu-btn">
     </nav>
+		</div>
+    </div>
 
 
 <!--	<nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top" style="background-color: #1C00ff00;">-->
@@ -200,7 +209,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 
 
-
 	{% block body %} {% endblock %}
 
 	<!-- footer -->
@@ -222,7 +230,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <a href="{{ url_for('about_us') }}">About Us</a>
             </li>
             <li>
-                <a href="#">Contact Us</a>
+                <a href="{{ url_for('Contact_us') }}">Contact Us</a>
+            </li>
+			<li>
+                <a href="{{ url_for('Fertilizer_distributor') }}">Fertilizer Distributors</a>
             </li>
         </ul>
         <p class="copyright">
@@ -244,6 +255,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<!-- move top icon -->
 	<a href="#home" class="move-top text-center"></a>
 	<!-- //move top icon -->
+
 </body>
 
 </html>
