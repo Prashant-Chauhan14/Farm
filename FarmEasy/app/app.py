@@ -163,6 +163,12 @@ def about_us():
     title = 'Rural Steer - About Us'
     return render_template('about-us.html', title=title)
 
+# Contact Us page redirect
+@ app.route('/contact-us')
+def Contact_us():
+    title = 'Rural Steer - Contact US'
+    return render_template('contact-us.html', title=title)
+
 # ===============================================================================================
 
 # RENDER PREDICTION PAGES
